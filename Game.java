@@ -1,3 +1,17 @@
+//-----------------------------------------
+// NAME        : Felix Vo
+// STUDENT NUMBER : 7924848
+// COURSE      : COMP 2150
+// INSTRUCTOR  : Heather Matheson
+// ASSIGNMENT  : Assignment 3
+// QUESTION    : N/A
+// 
+// REMARKS: Entry point for the Greed game. Initializes and launches
+//          the game instance.
+//
+//-----------------------------------------
+import java.util.Scanner;
+
 public abstract class Game implements RunnableGame {
         //Variables
         private GameLogic game;
@@ -10,7 +24,12 @@ public abstract class Game implements RunnableGame {
             board = gb;
             menu = m;
         }
-        //Methods
+    //------------------------------------------------------
+    // run
+    //
+    // PURPOSE: Main game loop. Switches between menu and game modes,
+    //          updating states and resetting components as needed.
+    //------------------------------------------------------
         @Override
         public void run() {
             while (true) {
